@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -21,11 +18,11 @@
   </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="夏目">
+<meta property="og:title" content="个人博客">
 <meta property="og:url" content="http://example.com/archives/2021/index.html">
-<meta property="og:site_name" content="夏目">
-<meta property="og:locale">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="夏目">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/archives/2021/">
@@ -37,11 +34,11 @@
     sidebar: "",
     isHome : false,
     isPost : false,
-    lang   : 'zh-Hans'
+    lang   : 'zh-CN'
   };
 </script>
 
-  <title>Archiv | 夏目</title>
+  <title>归档 | 个人博客</title>
   
 
 
@@ -81,7 +78,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -92,7 +89,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">夏目</h1>
+      <h1 class="site-title">个人博客</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
       <p class="site-subtitle" itemprop="description">FH</p>
@@ -111,12 +108,22 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Startseite</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archiv</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
   </ul>
@@ -149,7 +156,7 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">Öhm..! Insgesamt 2 Artikel. Bleib dran.</span>
+        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
       </div>
 
       
@@ -169,7 +176,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2021/03/28/SpringCloud/" itemprop="url">
+          <a class="post-title-link" href="/2021/03/28/Java/SpringCloud/" itemprop="url">
             <span itemprop="name">SpringCloud</span>
           </a>
       </div>
@@ -247,10 +254,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Übersicht
+          站点概览
         </li>
       </ul>
 
@@ -261,7 +268,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
+    <img class="site-author-image" itemprop="image" alt="夏目"
+      src="/images/favicon.png">
+  <p class="site-author-name" itemprop="name">夏目</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -270,7 +279,7 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">Artikel</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
   </nav>
@@ -301,12 +310,32 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">夏目</span>
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -335,6 +364,8 @@
 <script src="/js/next-boot.js"></script>
 
 
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
 
 
   
